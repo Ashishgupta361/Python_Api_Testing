@@ -18,3 +18,6 @@ with open("test.json") as f:
         if person['id'] == '04':
             print(f"Name of the person with id  is {person['name']} ")
 
+with open("test2.json") as fi:
+    data2 = json.load(fi)
+    assert data == data2
